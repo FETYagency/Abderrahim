@@ -1,0 +1,106 @@
+:root{
+    --CLR-purple: #0B5FD9;
+    --CLR-orange: hsl(28, 89%, 67%);
+    --CLR-pink: hsl(0, 78%, 79%);
+    --CLR-hotOrange: hsl(7, 77%, 66%);
+    --CLR-greenCyan: hsl(172, 46%, 57%);
+    --CLR-redPurple: hsl(314, 45%, 23%);
+
+    --CLR-black: hsl(0, 0%, 1%);
+    --CLR-grey: hsl(30, 5%, 45%);
+    --CLR-white: #E7F0F7;
+
+
+    --WGHT-BOLD: 700;
+    --WGHT-MEDIUM: 500;
+
+    --FS-HL: 3.73rem;
+    --LH-HL: 4.66rem;
+
+    --FS-HM: 2.66rem;
+    --LH-HM: 3.4rem;
+
+    --FS-HS: 2.1rem;
+    --LH-HS: 2.66rem;
+
+    --FS-body: 1.1rem;
+    --LH-body: 1.86rem;
+
+    font-size: 15px;
+}
+
+/* transition */
+
+.transition{
+    transition: background-color .3s ease;
+}
+
+/* btns assets */
+[class*=__btn]{
+    background-color:transparent;
+    color: var(--CLR-white);
+
+    
+    padding-inline: 1.9rem;
+    padding-block: .8rem;
+
+    border-radius: 3rem ;
+    border: none;
+
+    font-size: var(--FS-body);
+    line-height: var(--LH-body);
+
+    cursor: pointer;
+}
+
+.header__btn{
+    background-color: var(--CLR-black);
+
+}
+.header__btn:hover{
+    background-color: var(--CLR-purple);
+}
+
+.main__btn{
+    background-color: var(--CLR-hotOrange);
+
+}
+.main__btn:hover{
+    background-color: var(--CLR-orange);
+}
+
+/* arrows */
+
+[class*="arrow__"]{
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+
+    background-color: var(--CLR-black);
+
+    cursor: pointer;
+
+}
+
+[class*="arrow__"]:hover{
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+
+    background-color: var(--CLR-purple);
+}
+
+/* logo */
+.logo{
+    width: min(180px, 100%);
+}
