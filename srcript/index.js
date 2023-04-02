@@ -21,3 +21,29 @@ function notif(e){
 }
 
 select.forEach(notif);
+
+const formBox= document.querySelector(".login-box");
+const overlay = document.querySelector(".overlay");
+
+const formBtn = document.querySelector(".s__btn");
+const close = document.querySelector(".x");
+const mainBtn = document.querySelectorAll("button");
+
+formBox.remove();
+overlay.remove();
+
+mainBtn.forEach((e)=>{
+  e.addEventListener("click",()=>{
+    document.body.style.overflow="hidden"
+    document.body.append(overlay)
+    document.body.append(formBox)
+  })
+})
+
+
+
+close.addEventListener("click", ()=>{
+  document.body.style.overflow="visible"
+  formBox.remove();
+  overlay.remove();
+})
